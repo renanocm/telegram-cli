@@ -11,7 +11,6 @@ liblua5.2-dev \
 libevent-dev \
 libjansson-dev \
 libpython-dev \
-cron \
 wget \
 nano \
 make \
