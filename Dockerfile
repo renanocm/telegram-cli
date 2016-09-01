@@ -32,4 +32,4 @@ mkdir -vp /etc/telegram-cli/ && \
 mv -v /tg/tg-server.pub /etc/telegram-cli/server.pub && \
 rm -rf /tg/
 
-ENTRYPOINT /usr/bin/telegram-cli
+ENTRYPOINT /start.py
