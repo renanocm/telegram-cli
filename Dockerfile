@@ -32,4 +32,4 @@ mkdir -vp /etc/telegram-cli/ && \
 mv -v /tg/tg-server.pub /etc/telegram-cli/server.pub && \
 rm -rf /tg/
 
-CMD ["/bin/bash"]
+CMD [ "python", "/python/start_telegram.py" ]
