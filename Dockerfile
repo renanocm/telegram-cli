@@ -12,6 +12,7 @@ libevent-dev \
 libjansson-dev \
 libpython-dev \
 wget \
+cron \
 nano \
 make \
 git \
@@ -32,4 +33,4 @@ mkdir -vp /etc/telegram-cli/ && \
 mv -v /tg/tg-server.pub /etc/telegram-cli/server.pub && \
 rm -rf /tg/
 
-CMD [ "python", "/python/start_telegram.py" ]
+ENTRYPOINT /usr/bin/telegram-cli
