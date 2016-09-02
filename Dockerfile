@@ -12,8 +12,6 @@ libevent-dev \
 libjansson-dev \
 libpython-dev \
 wget \
-cron \
-nano \
 make \
 git \
 python \
