@@ -11,15 +11,13 @@ liblua5.2-dev \
 libevent-dev \
 libjansson-dev \
 libpython-dev \
-wget \
 make \
 git \
 python \
 python-pip
 
 RUN pip install --upgrade pip && \
-pip install requests && \
-pip install schedule
+pip install requests
 
 RUN git clone --recursive https://github.com/vysheng/tg.git /tg && \
 cd /tg && \
