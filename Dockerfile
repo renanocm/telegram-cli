@@ -33,4 +33,4 @@ rm -rf /tg/
 
 RUN mkdir -vp /app
 
-CMD [ "python", "/app/script.py" ]
+CMD [ "python", "/app/telegram.py" ]
