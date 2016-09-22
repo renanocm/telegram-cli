@@ -29,6 +29,10 @@ mkdir -vp /etc/telegram-cli/ && \
 mv -v /tg/tg-server.pub /etc/telegram-cli/server.pub && \
 rm -rf /tg/
 
+ENV TZ=America/Sao_Paulo
+
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN mkdir -vp /app
 
 CMD [ "python", "/app/telegram.py" ]
